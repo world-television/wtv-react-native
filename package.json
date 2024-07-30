@@ -236,7 +236,7 @@
     {
       "code": "ENOTSUP",
       "required": {
-        "node": ">=12"
+        "node": ">=10"
       },
       "pkgid": "react-native@0.64.1-wtv"
     }
