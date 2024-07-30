@@ -148,7 +148,7 @@
     "react": "17.0.1"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=10"
   },
   "files": [
     "!template/node_modules",
