@@ -1378,10 +1378,10 @@ public abstract class DevSupportManagerBase
    */
   private void compatRegisterReceiver(
       Context context, BroadcastReceiver receiver, IntentFilter filter, boolean exported) {
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE
-        && context.getApplicationInfo().targetSdkVersion >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+    if (Build.VERSION.SDK_INT >= 33
+        && context.getApplicationInfo().targetSdkVersion >= 33) {
       context.registerReceiver(
-          receiver, filter, exported ? Context.RECEIVER_EXPORTED : Context.RECEIVER_NOT_EXPORTED);
+          receiver, filter, exported ? 2 : 4);
     } else {
       context.registerReceiver(receiver, filter);
     }
